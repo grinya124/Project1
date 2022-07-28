@@ -1,0 +1,92 @@
+.body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000000;
+    height: 900px;
+    width: 1440px;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    
+}
+
+.image {
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    
+    background-color: #A8FF35;
+}
+
+.Findtrend {
+    width: 114px;
+    height: 24px;
+    top: 8px;
+    left: 51px;
+    color: white;
+}
+
+.register {
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+}
+
+.Minimize {
+position: absolute;
+width: 700px;
+height: 81px;
+left: 370px;
+top: 198px;
+
+font-family: 'Effra';
+font-style: normal;
+font-weight: 900;
+font-size: 72px;
+line-height: 112%;
+text-align: center;
+
+color: white;
+}
+
+.Find {
+position: absolute;
+width: 700px;
+height: 81px;
+left: 370px;
+top: 279px;
+
+font-family: 'Effra';
+font-style: normal;
+font-weight: 900;
+font-size: 72px;
+line-height: 112%;
+text-align: center;
+
+color: white;
+}
+
+.login {
+    color: white;
+}
+
+.text {
+    position: absolute;
+width: 666px;
+height: 54px;
+left: 387px;
+top: 384px;
+
+font-family: 'Effra';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+
+color: #8B8B8B;
+}
