@@ -65,7 +65,10 @@ main {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     padding: 0 80px;
+    width: 100vw;
 }
 
 .black {
@@ -73,6 +76,7 @@ main {
     background-color: #000;
     justify-content: center;
     padding: 100px 0 90px;
+    flex-direction: column;
 }
 
 .black h1 {
@@ -85,13 +89,64 @@ main {
     text-align: center;
 }
 
-.container-1 {
+.banners-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
-    background-color: black;
+    margin-top: 95px;
 }
+
+.banners {
+    color: #fff;
+    background-color: #181818;
+    padding:10px 10px; 
+    transform: rotate(-4deg);
+    width: 340px;
+    height: 50px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.banners img {
+    width: 31px;
+    height: auto;
+    margin-right: 13px;
+}
+
+.banners span {
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.2;
+    overflow: hidden;
+    width: 213px;
+}
+
+.banners i {
+    color: #fff;
+    font-size: 40px;
+    font-style: normal;
+    margin: 0 13px 5px 0;
+    position: relative;
+    flex: 1;
+    text-align: right;
+}
+
+.banners i:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+}
+
+.banners.pn {
+    transform: rotate(6deg);
+}
+
 
 .cryptopunk {
        
