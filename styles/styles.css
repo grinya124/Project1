@@ -53,10 +53,18 @@ nav ul li a {
 .login {
     display: flex;
     gap:  40px;
+    font-weight: 400;
+}
+
+.register {
+    border-radius: 40px;
+    width: 129px;
+    height: 42px;
+    font-weight: 400;
 }
 
 .register:hover {
-    border-radius: 10px;
+    border-radius: 40px;
     background-color: rgb(19, 220, 66);
 }
 
@@ -79,6 +87,27 @@ main {
     flex-direction: column;
 }
 
+.started {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 10px;
+    
+    width: 180px;
+    height: 57px;
+    left: 630px;
+    top: 478px;
+
+    background: #A8FF35;
+    border-radius: 40px;
+}
+
+.g-started {
+    
+}
+
 .black h1 {
     font-family: 'Effra';
     font-style: normal;
@@ -99,6 +128,7 @@ main {
 .banners {
     color: #fff;
     background-color: #181818;
+    box-shadow: #A8FF35;
     padding:10px 10px; 
     transform: rotate(-4deg);
     width: 340px;
@@ -143,75 +173,28 @@ main {
     transform: translateY(-50%);
 }
 
-.banners.pn {
-    transform: rotate(6deg);
+.banners.tw {
+    
+    left: 186px;
+    transform: rotate(-4deg);
 }
 
+.banners.pn {
+    transform: rotate(2deg);
+}
 
-.cryptopunk {
-       
-    color: #fff;
-    background-color: #181818;
-    
-    padding:10px 10px; 
-    transform: rotate(-4deg);
+.banners.fb {
+    transform: rotate(-2deg)
+}
 
-    position: absolute;
-    width: 341.23px;
-    height: 50px;
-    left: 186px;
-    top: 654.8px;
+.banners.bb {
+    transform: rotate(4deg)
 }
 
 .x {
     width: 10px;
     height: 10px;
    
-}
-
-.popular-design {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #fff;
-    background-color: #181818;
-
-    position: absolute;
-    width: 341.23px;
-    height: 50px;
-    left: 391.16px;
-    top: 699.47px;
-    transform: rotate(2deg);
-}
-
-.product-design {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #fff;
-    background-color: #181818;
-
-    position: absolute;
-    width: 341.23px;
-    height: 50px;
-    left: 639.12px;
-    top: 657.78px;  
-    transform: rotate(-2deg);
-}
-
-.elon-musk {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #fff;
-    background-color: #181818;
-
-    position: absolute;
-    width: 341.23px;
-    height: 50px;
-    left: 913.6px;
-    top: 695.13px;   
-    transform: rotate(4deg);
 }
 
 .text {
