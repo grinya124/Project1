@@ -1,8 +1,17 @@
+:root {
+  --main-green-color: #A8FF35;
+}
+
 .body {
     font-family: "Montserrat", sans-serif;
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+button {
+    cursor: pointer;
+    transition:all .2s ease-in-out;
 }
 
 .header {
@@ -50,33 +59,51 @@ nav ul li a {
     text-decoration: none;
 }
 
-.login {
+.user {
     display: flex;
     gap:  40px;
-    font-weight: 400;
+    align-items: center;
+}
+
+.login {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.login:hover {
+    color: var(--main-green-color);
 }
 
 .register {
     border-radius: 40px;
     width: 129px;
-    height: 42px;
+    font-size: 18px;
+    line-height: 42px;
     font-weight: 400;
+    transition:all .2s ease-in-out;
+    border: none;
 }
 
 .register:hover {
     border-radius: 40px;
-    background-color: rgb(19, 220, 66);
+    background-color: var(--main-green-color);;
 }
 
 main {
     margin-top: 130px;
+    overflow: hidden;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     padding: 0 80px;
-    width: 100vw;
+}
+
+.container.flex-center {
+    justify-content: center;
+    align-items: center;
 }
 
 .black {
@@ -88,24 +115,28 @@ main {
 }
 
 .started {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 32px;
-    gap: 10px;
-    
     width: 180px;
-    height: 57px;
-    left: 630px;
-    top: 478px;
-
-    background: #A8FF35;
+    line-height: 57px;
+    background: var(--main-green-color);
     border-radius: 40px;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
 }
 
-.g-started {
-    
+.started:before {
+    content: '';
+    position: absolute;
+    right: -111px;
+    top: -13px;
+    background-image: url(../img/button-tooltip.svg);
+    width: 99px;
+    height: 70px;
+}
+
+.started:hover {
+    background: #fff;
 }
 
 .black h1 {
@@ -113,9 +144,10 @@ main {
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
-    line-height: 112%;
+    line-height: 1.2;
     color: #fff;
     text-align: center;
+    margin: 0 0 24px;
 }
 
 .banners-container {
@@ -202,9 +234,10 @@ main {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 1.5;
     color: #8B8B8B;
     text-align: center;
+    margin: 0 0 40px;
 }
 
 .green {
