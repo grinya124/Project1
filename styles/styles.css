@@ -112,6 +112,37 @@ main {
     padding: 0 80px;
 }
 
+.elon-musk {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    transform: translate(0px, -20px);
+}
+
+.image-left-up {
+    width: 30px;
+    transform: translate(55px, 0px);
+}
+
+.image-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    transform: translate(0px, -40px);
+}
+
+.image-right-down {
+    width: 30px;
+    transform: translate(-5px, 0px);
+}
+
 .container.flex-center {
     justify-content: center;
     align-items: center;
@@ -171,11 +202,11 @@ main {
 .banners {
     color: #fff;
     background-color: #181818;
-    box-shadow: #A8FF35;
+    box-shadow: 15px 15px 10px #000000;
     padding:10px 10px; 
-    transform: rotate(-4deg);
+    
     width: 340px;
-    height: 50px;
+    height: 70px;
     white-space: nowrap;
     display: flex;
     align-items: center;
@@ -210,26 +241,30 @@ main {
     position: absolute;
     width: 30px;
     height: 30px;
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(100deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
     top: 50%;
-    left: -30px;
+    left: -20px;
     transform: translateY(-50%);
 }
 
 .banners.tw {
-    transform: rotate(-11deg) translate(48px, 45px);
+    transform: rotate(-6deg) translate(170px, -30px);
+    z-index: 4;
 }
 
 .banners.pn {
-    transform: rotate(13deg) translate(12px, 0px);
+    transform: rotate(5deg) translate(-10px, 35px);
+    z-index: 3;
 }
 
 .banners.fb {
-    transform: rotate(-11deg) translate(48px, 45px);
+    transform: rotate(-4deg) translate(-75px, -30px);
+    z-index: 2;
 }
 
 .banners.bb {
-    transform: rotate(-11deg) translate(48px, 45px);
+    transform: rotate(4deg) translate(-115px, 45px);
+    z-index: 1;
 }
 
 .x {
@@ -329,7 +364,7 @@ main {
     
     padding: 15px;
     box-sizing: border-box;
-}
+    }
 
 .grey {
     display: flex;
@@ -347,6 +382,29 @@ main {
     line-height: 76px;
 }
 
+.platforms {
+    display: flex;
+    flex-direction: row;
+    
+    height: 124px;
+    align-items: center;
+    margin-top: 80px;
+    padding: 30px;
+    background-color: rgb(63, 97, 142);
+}
+
+.musk-message {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.image2 {
+    padding: 32px;
+    width: 60px;
+    height: 60px;
+}
+
 .get {
     display: flex;
     flex-direction: column;
@@ -358,7 +416,7 @@ main {
 }
 
 .get h2 {
-    text-align: start;
+    
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -366,8 +424,12 @@ main {
     color: #fff;
 }
 
-.get-content {
+.deal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     color: #fff;
+    size: 360px, 640px;
 }
 
 .join {
