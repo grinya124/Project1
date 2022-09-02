@@ -355,23 +355,24 @@ main {
   
 .image1 {
     width: 22%;
-    /* Optional */
     position: relative;
-    
     margin-bottom: 2%;
     border-radius: 8px;
     background-color: #F5F5F5;
-    
-    padding: 15px;
-    box-sizing: border-box;
-    }
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .grey {
-    display: flex;
     padding: 140px 0;
-    justify-content: center;
-    text-align: center;
     background: #FAFAFA;
+}
+
+.grey .container {
+    justify-content: center;
+    align-items: center;
 }
 
 .grey h2 {
@@ -385,12 +386,9 @@ main {
 .platforms {
     display: flex;
     flex-direction: row;
-    
-    height: 124px;
+    gap: 24px;
     align-items: center;
     margin-top: 80px;
-    padding: 30px;
-    background-color: rgb(63, 97, 142);
 }
 
 .musk-message {
@@ -403,33 +401,112 @@ main {
     padding: 32px;
     width: 60px;
     height: 60px;
+    background: #FFF;
+    border-radius: 5px;
+    transition:all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.image2:hover {
+    background: var(--main-green-color);
 }
 
 .get {
-    display: flex;
-    flex-direction: column;
     padding: 140px 0;
-    justify-content: center;
-    text-align: center;
     color: #ffff;
     background: #000000;
 }
 
+.get .container {
+    justify-content: center;
+}
+
 .get h2 {
-    
+    margin: 0 0 51px;
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 76px;
     color: #fff;
+    align-self: center;
 }
 
 .deal {
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     color: #fff;
-    size: 360px, 640px;
+}
+
+.block {
+    padding: 32px 32px 24px;
+    background: #FAFAFA;
+    color: #000;
+    border-radius: 16px;
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block > div > strong {
+    font-size: 36px;
+    display: block;
+    font-weight: 400;
+}
+
+.block > div > span {
+    font-size: 18px;
+    display: block;
+}
+
+.block hr {
+    margin: 32px 0;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.price strong {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.block ul {
+    list-style-type: none;
+    padding-left: 34px;
+    margin: 32px 0 0;
+    font-size: 18px;
+}
+
+.block li {
+    margin-bottom: 27px;
+    position: relative;
+}
+.block li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -27px;
+    transform: translateY(-50%);
+    background-image: url(../img/ok.svg);
+    width: 14px;
+    height: 9px;
+}
+.block li:last-child {
+    margin-bottom: 0;
+}
+
+.block.active {
+    background: var(--main-green-color);
+}
+
+.block.active button {
+    background: #000;
+    color: #fff;
 }
 
 .join {
