@@ -7,11 +7,12 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 button {
     cursor: pointer;
-    transition:all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 
@@ -154,6 +155,7 @@ main {
     justify-content: center;
     padding: 100px 0 90px;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .started {
@@ -350,13 +352,12 @@ main {
 .brands {
     display: flex;
     flex-wrap: wrap;
-    gap: 3%;
+    gap: 20px 3%;
 }
   
 .image1 {
     width: 22%;
     position: relative;
-    margin-bottom: 2%;
     border-radius: 8px;
     background-color: #F5F5F5;
     height: 120px;
@@ -502,6 +503,7 @@ input:checked[type="checkbox"]:before {
     flex-direction: row;
     justify-content: space-evenly;
     color: #fff;
+    gap: 10px 10px;
 }
 
 .block {
@@ -616,8 +618,8 @@ input:checked[type="checkbox"]:before {
     flex-direction: column;
     padding: 140px 0;
     justify-content: center;
-    text-align: center;
     background: #A8FF35;
+    align-items: center;
 }
 
 .join-content {
@@ -636,7 +638,7 @@ input:checked[type="checkbox"]:before {
     margin-top: 0;
 }
 
-.h2-2 {
+.join h2 span {
     color: #8B8B8B;
 }
 
@@ -665,8 +667,7 @@ input:checked[type="checkbox"]:before {
 }
   
 .footer {
-    height: 100px;
-    padding: 40px 80px;
+    padding: 30px 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -674,27 +675,33 @@ input:checked[type="checkbox"]:before {
     background-color: #ffff;
 }
 
-.logo2 {
-    gap: 20px;
+.logo-footer {
+    display: flex;
+    gap: 10px;
     align-items: center;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 100%;
-    color: #fff;
-}
-
-.find2 {
+    line-height: 1;
     color: #000;
 }
 
-.info-ul {
+.footer-menu {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     gap: 40px;
+}
+
+.footer-menu a {
     color: #000;
     text-decoration: none;
+    font-size: 14px;
+    line-height: 1;
+    transition:all .2s ease-in-out;
 }
+
+.footer-menu a:hover {
+    color: var(--main-green-color);
+}
+
 
